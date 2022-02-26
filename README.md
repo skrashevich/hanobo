@@ -39,14 +39,14 @@ Or watch gif at [https://hacs.xyz](https://hacs.xyz)
 ### Or manually
 To get started with this superexperimental implementation:
 
-1. Clone or download the project to [HA config path]/custom_components/nobo_hub:
-2. Go to directory - `cd [HA config path]/custom_components/nobo_hub`
+1. Clone or download the project to [HA config path]/custom_components/nobo_ecohub:
+2. Go to directory - `cd [HA config path]/custom_components/nobo_ecohub`
 3. Move files - `mv custom_components/* .`
 
 ### Configuration
 * Restart Home Assistant, you will get this warning:
 
-      WARNING (MainThread) [homeassistant.loader] You are using a custom component for nobo_hub.climate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
+      WARNING (MainThread) [homeassistant.loader] You are using a custom component for nobo_ecohub.climate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you do experience issues with Home Assistant.
 
 * You can now add "Nobø Ecohub" as an integration in the Home Assistant UI.
   * Week profiles for "off" and "on" settings are set as options in the UI using the "Configure" button on the integration.
@@ -59,15 +59,15 @@ To get started with this superexperimental implementation:
       logger:
         default: warning
         logs:
-          custom_components.nobo_hub.climate: debug
+          custom_components.nobo_ecohub.climate: debug
           pynobo: debug
 
 #### Importing from `configuration.yaml`
 
 If you have previously configured `nobo_hub` in `configuration.yaml` you will see the following warnings in the log:
 
-    WARNING (MainThread) [custom_components.nobo_hub.climate] Loading Nobø Ecohub via platform setup is depreciated; Please remove it from your configuration
-    WARNING (MainThread) [custom_components.nobo_hub.climate] Importing Nobø Ecohub configuration from configuration.yaml
+    WARNING (MainThread) [custom_components.nobo_ecohub.climate] Loading Nobø Ecohub via platform setup is depreciated; Please remove it from your configuration
+    WARNING (MainThread) [custom_components.nobo_ecohub.climate] Importing Nobø Ecohub configuration from configuration.yaml
 
 Verify that the configuration is successfully imported by going to "Configuration" -> "Integrations" in the Home Assistant UI.
 There you should see your Nobø Ecohub. Go to "Configure" to verify the off and on commands.
