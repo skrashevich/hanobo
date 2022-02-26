@@ -1,16 +1,17 @@
 {
-  "domain": "nobo_hub",
-  "name": "Nob\u00f8 Ecohub",
+  "domain": "nobo_ecohub",
+  "name": "Nobo Ecohub by svk",
   "config_flow": true,
-  "documentation": "https://github.com/echoromeo/hanobo",
-  "issue_tracker": "https://github.com/echoromeo/hanobo/issues",
+  "documentation": "https://github.com/skrashevich/hanobo",
+  "issue_tracker": "https://github.com/skrashevich/hanobo/issues",
   "requirements": [
     "pynobo>=1.2.0,<2.0"
   ],
   "version": "1.2.0",
   "codeowners": [
     "@echoromeo",
-    "@oyvindwe"
+    "@oyvindwe",
+    "@skrashevich"
   ],
   "iot_class": "local_push"
 }
